@@ -1,0 +1,5 @@
+To install node modules:
+npm install 
+
+run with this command for debug mode:
+DEBUG=myapp:* npm start

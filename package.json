@@ -1,0 +1,25 @@
+{
+  "name": "project-ice",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon src/server.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node dist/server.js",
+    "test": "echo 'There ar no magic like that!'",
+    "startold": "node ./dist/server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "nodemon": "^1.10.2"
+  }
+}
