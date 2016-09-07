@@ -6,12 +6,10 @@
     "start": "nodemon src/server.js --exec babel-node",
     "build": "babel src -d dist",
     "serve": "node dist/server.js",
-    "test": "echo 'There ar no magic like that!'",
-    "startold": "node ./dist/server.js"
+    "test": "echo 'There ar no magic like that!'"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
-    "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.14.0",
     "morgan": "~1.7.0"

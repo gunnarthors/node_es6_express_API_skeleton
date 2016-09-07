@@ -1,7 +1,6 @@
 import 'babel-polyfill'
 import express from 'express'
 import logger from 'morgan'
-import cookieParser from 'cookie-parser'
 import bodyParser from 'body-parser'
 import routes from './routes/'
 
@@ -10,7 +9,6 @@ let app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
 
 // All routes goes here!
 app.use('/', routes);
